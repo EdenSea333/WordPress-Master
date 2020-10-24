@@ -1,0 +1,9 @@
+.category-color-block{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	box-shadow: 0 0 2px rgba(0,0,0, .2);
+	border-radius: 2px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2NkYGDwZcAEm9GFGIeIQix+wfQgyDODXSEArboGjIsZJ6IAAAAASUVORK5CYII=);
+	background-repeat: repeat;
+}

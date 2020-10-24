@@ -1,0 +1,116 @@
+.maester-tutor-courses{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	.maester-tutor-course{
+		padding: 0 15px;
+		margin-bottom: 50px;
+		width: 100%;
+		@include breakpoint(lg){
+			margin-bottom: 30px;
+		}
+	}
+	&.column-2 .maester-tutor-course{
+		width: 50%;
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-3 .maester-tutor-course{
+		width: 33.3333%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-4 .maester-tutor-course{
+		width: 25%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+	&.column-5 .maester-tutor-course{
+		width: 20%;
+		@include breakpoint(md){
+			width: 50%;
+		}
+		@include breakpoint(xs){
+			width: 100%;
+		}
+	}
+}
+
+.maester-tutor-course{
+	text-align: center;
+	.price > span{
+		display: block;
+		margin-bottom: 8px;
+		font-size: 16px;
+		color: var(--mr-major-color)
+	}
+	.added_to_cart{
+		margin-left: 4px;
+	}
+	.maester-course-meta{
+		margin: 0 -2px 8px;
+		padding: 0;
+		list-style: none;
+		font-size: 13px;
+		li{
+			display: inline-block;
+			padding: 0 2px;
+			strong{
+				font-weight: 600;
+				color: var(--mr-heading-color)
+			}
+			a{
+				color: var(--mr-text-color);
+				text-decoration: underline;
+				&:hover{
+					color: var(--mr-major-color);
+					text-decoration: none;
+				}
+				&:not(:last-child){
+					margin-right: 4px;
+					&::after{
+						content: ',';
+					}
+				}
+			}
+		}
+	}
+	.maester-course-content {
+		padding: 25px 15px 0;
+		h3{
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 500;
+			position: relative;
+			i.course-bookmark-icon{
+				line-height: inherit;
+				margin-right: 5px;
+				cursor: pointer;
+				padding: 0 5px;
+				font-weight: 400;
+				&.wishlisted{
+					font-weight: 900;
+				}
+				&:hover{
+					color: var(--mr-major-color)
+				}
+			}
+			a{
+				display: inline;
+				color: var(--mr-heading-color);
+				&:hover{
+					color: var(--mr-major-color);
+				}
+			}
+		}
+	}
+}

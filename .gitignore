@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+.sass-cache
+.idea
+package-lock.json
+node_modules
+slnx.sqlite
+.vscode

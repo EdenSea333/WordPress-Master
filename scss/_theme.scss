@@ -1,0 +1,197 @@
+
+/* Color Theme Swatches in Hex */
+
+/*
+--mr-major-color: #F23847;
+--mr-major-color-hover: #BF3945;
+*/
+
+
+:root{
+    --mr-font: "Source Sans Pro", HelveticaNeue-Light, Helvetica,Arial, "Lucida Grande", sans-serif;
+    --mr-body-bg: #ffffff;
+    --mr-text-color: #444444;
+    --mr-heading-color: #252525;
+    --mr-light-color: #999999;
+    --mr-border-color: #ececec;
+    --mr-border-color-hover: #d5d5d5;
+    --mr-major-color: #AF3C5E;
+    --mr-major-color-hover: #64284A;
+    --mr-success-color: #77a464;
+    --mr-info-color: #3c9acf;
+    --mr-error-color: #e2401c;
+}
+
+body{
+    font-family: var(--mr-font);
+    background: var(--mr-body-bg);
+    color: var(--mr-text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.857em;
+    --tutor-primary-color: var(--mr-major-color);
+    --tutor-primary-hover-color: var(--mr-major-color-hover);
+    --tutor-text-color: var(--mr-text-color);
+    --tutor-light-color: var(--mr-light-color);
+    --tutor-success-button-color: var(--mr-success-color);
+}
+
+p{
+    line-height: 1.857em;
+}
+
+.site-content{
+    padding-bottom: 60px;
+}
+
+.type-fade {
+    opacity: .5;
+}
+.type-uppercase {
+    text-transform: uppercase;
+}
+.type-bold {
+    font-weight: bold;
+}
+.type-italic {
+    font-style: italic;
+}
+.type-strikethrough {
+    text-decoration: line-through;
+    opacity: .5;
+}
+.type-underline {
+    text-decoration: underline;
+}
+
+blockquote{
+    border-left: 4px solid #000;
+    padding: 10px 0 0 18px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: .9;
+    cite{
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+.user-modal-overlay,
+.maester-popup-search-overlay{
+    cursor: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16.227 19.353L10 13.126l-6.227 6.227a2.21 2.21 0 0 1-3.126-3.126L6.874 10 .647 3.773A2.21 2.21 0 0 1 3.773.647L10 6.874 16.227.647a2.21 2.21 0 0 1 3.126 3.126L13.126 10l6.227 6.227a2.21 2.21 0 0 1-3.126 3.126z' fill='%23F23847' fill-rule='evenodd'/%3e%3c/svg%3e"), auto;
+}
+
+.fa-before{
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: inherit;
+}
+.woocommerce .woocommerce-message{
+    position: relative;
+    a.button{
+        position: absolute;
+        right: 15px;
+        float: none;
+        padding: 6px 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/**
+ * Info box
+ */
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-noreviews,
+p.no-comments {
+    font-size: 16px;
+    border-top: none;
+    padding: 1em 1.618em;
+    margin-bottom: 2.617924em;
+    margin-left: 0;
+    border-radius: 2px;
+    color: #fff;
+    clear: both;
+    border-left: .6180469716em solid rgba(0,0,0,.15);
+    a:not(.button){
+        color: #fff;
+        opacity: .9;
+        text-decoration: underline;
+        &:hover{
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+}
+
+.woocommerce-message{
+    background-color: var(--mr-success-color);
+}
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments{
+    background-color: var(--mr-info-color);
+}
+
+.woocommerce-error{
+    background-color: var(--mr-error-color);
+}
+
+
+.woocommerce-error::after,
+.woocommerce-error::before,
+.woocommerce-info::after,
+.woocommerce-info::before,
+.woocommerce-message::after,
+.woocommerce-message::before,
+.woocommerce-noreviews::after,
+.woocommerce-noreviews::before,
+p.no-comments::after,
+p.no-comments::before {
+    content: '';
+    display: table;
+}
+
+.woocommerce-error::after,
+.woocommerce-info::after,
+.woocommerce-message::after,
+.woocommerce-noreviews::after,
+p.no-comments::after {
+    clear: both;
+}
+.woocommerce{
+    .woocommerce-error .button,
+    .woocommerce-info .button,
+    .woocommerce-message .button,
+    .woocommerce-noreviews .button,
+    p.no-comments .button {
+        float: right;
+        padding: 0;
+        background: 0 0;
+        color: #fff;
+        box-shadow: none;
+        line-height: 1.618;
+        padding-left: 1em;
+        border-width: 0;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgba(255,255,255,.25)!important;
+        border-radius: 0;
+        font-style: 14px;
+        &:hover{
+            background: transparent;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.4",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-rename": "^1.4.0"
+  },
+  "dependencies": {
+    "gulp-ruby-sass": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.0"
+  }
+}

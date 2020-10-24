@@ -1,0 +1,101 @@
+#open-user-modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .user-modal-overlay{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: #000000;
+        opacity: .8;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .user-modal-inner{
+        width: 470px;
+        background: #fff;
+        max-height: 90%;
+        overflow-y: auto;
+        position: relative;
+        z-index: 1;
+        max-width: 90%;
+    }
+    .user-modal-tabs{
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li{
+                flex-grow: 1;
+                line-height: 30px;
+                padding: 15px;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: var(--mr-major-color);
+                color: #fff;
+                cursor: pointer;
+                @media screen and (max-width: 767px) {
+                    padding: 10px;
+                }
+                &.active{
+                    background: #fff;
+                    color: var(--mr-major-color);
+                }
+            }
+        }
+        .tab-content{
+            display: none;
+            padding: 30px 45px;
+            @media screen and (max-width: 767px) {
+                padding: 20px 30px;
+            }
+            &.active{
+                display: block;
+            }
+        }
+    }
+}
+form#lostpass,
+form#login,
+form#registration{
+    label{
+        display: block;
+    }
+    input:not([type="checkbox"]){
+        display: block;
+        width: 100%;
+    }
+    input[type="checkbox"]{
+        + label{
+            display: inline-block;
+        }
+    }
+    .user-input-group{
+        &:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+    }
+    .user-input-group a{
+        text-align: center;
+        display: block;
+    }
+    p.status{
+        border-left: 4px solid var(--mr-major-color);
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #f7f7f7;
+    }
+    p.info{
+        line-height: 1.7;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,266 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"]{
+    -webkit-appearance: none;
+    background: #fcfcfc;
+    padding: 9px;
+    border-radius: 3px;
+    border: 1px solid var(--mr-border-color);
+    line-height: 22px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+input[type]:active, textarea:active, select:active {
+    outline: none;
+}
+input[type]:focus, textarea:focus, select:focus {
+    outline: none;
+}
+input[type], select, textarea {
+    padding-left: 13px;
+}
+
+.select2-container .select2-selection--single{
+    height: 38px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field,
+.select2-container .select2-selection--single,
+.select2-dropdown{
+    border-color: var(--mr-border-color);
+}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus{
+    border-color: var(--mr-major-color);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 36px;
+    padding-left: 13px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 36px;
+}
+
+img{
+    display: block;
+}
+a:visited,
+a{
+    display: inline-block;
+    color: var(--mr-major-color);
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: var(--mr-major-color-hover);
+    }
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote{
+    margin: 0 0 10px;
+}
+
+ul,
+ol {
+    line-height: 26px;
+}
+ul.bullets {
+    list-style: inside;
+}
+ol {
+    //list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300;
+    color: var(--mr-heading-color);
+    font-variant-ligatures: common-ligatures;
+    margin-top: 0;
+    margin-bottom: .5407911001em;
+}
+blockquote+h2,
+blockquote+h3,
+blockquote+h4,
+blockquote+header h2,
+p+h2,
+p+h3,
+p+h4,
+p+header
+h2, table+h2,
+table+h3,
+table+h4,
+table+header h2 {
+    margin-top: 1em;
+}
+
+.h1,
+h1{
+    font-size: 42px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.h2,
+h2{
+    font-size: 32px;
+    line-height: 1.214;
+}
+
+.h3,
+h3{
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.h4,
+h4{
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.h5,
+h5{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.h6,
+h6{
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+aside.widget-area .widget::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
+.search-form label{
+    display: block;
+    width: 100%;
+    input{
+        width: 100%;
+    }
+    + input{
+        margin-top: 10px;
+        display: none;
+    }
+}
+
+.widget::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.clear::after,
+.clear::before,
+.comment-content::after,
+.comment-content::before,
+.entry-content::after,
+.entry-content::before,
+.site-content::after,
+.site-content::before,
+.site-footer::after,
+.site-footer::before,
+.site-header::after,
+.site-header::before {
+    content: '';
+    display: table
+}
+
+.clear::after,
+.comment-content::after,
+.entry-content::after,
+.site-content::after,
+.site-footer::after,
+.site-header::after {
+    clear: both
+}
+
+.error-404 .page-content{
+    margin-bottom: 60px;
+    .search-form{
+        padding: 25px;
+        background: rgba(0,0,0,.025);
+        border: 1px solid var(--mr-border-color);
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+}
+
+.woocommerce ul.products li.product .button,
+.woocommerce ul.products li.product .added_to_cart{
+    margin-top: 6px;
+}
+.woocommerce ul.products li.product .added_to_cart{
+    margin-left: 4px;
+}
+
+table{
+    background: #fff;
+    border: none;
+    border-collapse: collapse;
+    tr{
+        th{
+            background: #f8f8f8;
+            border: none;
+            padding: 10px;
+        }
+        td{
+            background: #f4f4f4;
+            border: none;
+            padding: 10px;
+        }
+        &:nth-child(even) td{
+            background: #fff;
+        }
+    }
+}
+

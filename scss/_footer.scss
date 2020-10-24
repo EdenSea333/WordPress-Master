@@ -1,0 +1,55 @@
+/**
+ * Footer Widget Area
+ */
+
+.footer-widget-area {
+    background: rgb(250, 250, 250);
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(236, 236, 236);
+    .widget-title {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0 0 13px;
+    }
+    .widget.footer-widget {
+        margin-bottom: 50px;
+    }
+    a {
+        color: var(--mr-text-color);
+        &:hover {
+            color: var(--mr-major-color);
+        }
+    }
+}
+
+.widget {
+    ul {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        ul {
+            padding-left: 15px;
+        }
+    }
+}
+
+.widget .nice-select span.current {
+    max-width: 205px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+
+/**
+ * Footer Main Area
+ */
+
+.footer-main {
+    background: rgb(236, 236, 236);
+    padding: 30px;
+    .site-info p {
+        margin: 0;
+    }
+}

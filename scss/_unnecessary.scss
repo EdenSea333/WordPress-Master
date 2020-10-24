@@ -1,0 +1,17 @@
+
+/**
+ * Addon override
+ */
+
+#feature-comparison{
+	.eael-data-table thead tr th:first-child,
+	.eael-data-table tbody tr td:first-child {
+		text-align: left !important;
+	}
+	.eael-data-table tbody tr .fa-check {
+		color: var(--mr-success-color);
+	}
+	.eael-data-table tbody tr .fa-times {
+		color: var(--mr-error-color);
+	}
+}
